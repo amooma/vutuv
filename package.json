@@ -1,0 +1,12 @@
+{
+  "author": "Stefan Wintermeyer",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-sass": "*"
+  },
+  "license": "MIT",
+  "name": "vutuv",
+  "private": true,
+  "repository": "https://github.com/amooma/vutuv",
+  "version": "0.0.1"
+}
