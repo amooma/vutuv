@@ -150,10 +150,20 @@ div.footer {
     color: #ffffff;
     text-align: center; }
   div.footer p.address {
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 600; }
+    div.footer p.address br {
+      display: none; }
+    @media (max-width: 700px) {
+      div.footer p.address span {
+        display: none; }
+      div.footer p.address br {
+        display: block; } }
   div.footer p.owner {
     font-size: 14px;
-    line-height: 18px; }
+    line-height: 18px;
+    padding: 5px 0px 0px 0px; }
   div.footer div {
     height: 32px;
     margin: 20px auto 20px auto;

@@ -214,12 +214,29 @@ div.footer {
   }
 
   p.address {
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 600;
+
+    br {
+      display: none;
+    }
+
+    @media (max-width: 700px) {
+      span {
+        display: none;
+      }
+
+      br {
+        display: block;
+      }
+    }
   }
 
   p.owner {
     font-size: 14px;
     line-height: 18px;
+    padding: 5px 0px 0px 0px;
   }
 
   div {
