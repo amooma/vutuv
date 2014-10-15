@@ -2,7 +2,7 @@
 
 $color-light-green: #57b862;
 $color-light-red: #e65151;
-$menu-background: #4e805b;
+$menu-section-background: #4e805b;
 
 /* ### LAYOUT: ### */
 
@@ -64,16 +64,25 @@ div.menu {
     width: auto;
 
     div.section {
+      display: inline;
       float: right;
       height: 30px;
       padding: 15px;
       width: auto;
+
+      @media (max-width: 700px) {
+        padding: 15px 10px 15px 10px;
+      }
 
       div {
         float: left;
         height: 18px;
         margin: 6px 10px 6px 0px;
         width: 18px;
+
+        @media (max-width: 700px) {
+          margin: 6px 0px 6px 0px;
+        }
       }
 
       p {
@@ -81,6 +90,19 @@ div.menu {
         float: left;
         font-size: 18px;
         line-height: 30px;
+
+        @media (max-width: 700px) {
+          display: none;
+        }
+      }
+    }
+
+    div.active {
+      background-color: $menu-section-background;
+      padding: 15px;
+
+      @media (max-width: 700px) {
+        margin: 0px 5px 0px 5px;
       }
     }
 
