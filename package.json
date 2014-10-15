@@ -2,6 +2,9 @@
   "author": "Stefan Wintermeyer",
   "dependencies": {
     "gulp": "*",
+    "gulp-base64": "*",
+    "gulp-concat": "*",
+    "gulp-minify-css": "*",
     "gulp-sass": "*"
   },
   "license": "MIT",

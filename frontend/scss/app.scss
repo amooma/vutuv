@@ -1,0 +1,103 @@
+/* ### SASS VARIABLES: ### */
+
+$color-light-green: #57b862;
+$color-light-red: #e65151;
+$menu-background: #4e805b;
+
+/* ### LAYOUT: ### */
+
+*, html, body {
+  font-family: 'Ubuntu', ubuntu, sans-serif;
+  font-size: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+body, html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  height: 100%;
+  width: 100%;
+}
+
+/* ### LOGO: ### */
+
+div.logo-white {
+  background: url('../gfx/logo-white.svg');
+}
+
+/* ### CONTENT: ### */
+
+div.content {
+  height: auto;
+  margin: 0px auto 0px auto;
+  max-width: 800px;
+  width: 95%;
+}
+
+/* ### MENU: ### */
+
+div.menu {
+  background: $color-light-green;
+  height: 60px;
+  width: 100%;
+
+  div.logo {
+    float: left;
+    height: 30px;
+    margin: 15px 0px 15px 0px;
+    width: 114px;
+
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  div.sections {
+    float: right;
+    height: auto;
+    width: auto;
+
+    div.section {
+      float: right;
+      height: 30px;
+      padding: 15px;
+      width: auto;
+
+      div {
+        float: left;
+        height: 18px;
+        margin: 6px 10px 6px 0px;
+        width: 18px;
+      }
+
+      p {
+        color: #ffffff;
+        float: left;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    div.products div {
+      background: url('../gfx/icon-products.svg');
+    }
+
+    div.search div {
+      background: url('../gfx/icon-search.svg');
+    }
+
+    div.profile div {
+      background: url('../gfx/icon-profile.svg');
+    }
+
+    div.basket div {
+      background: url('../gfx/icon-basket.svg');
+    }
+  }
+}
