@@ -239,6 +239,9 @@ div.category div.list {
           div.category div.list div.product div.description h2 {
             font-size: 22px;
             line-height: 28px; } }
+        div.category div.list div.product div.description h2 a {
+          color: inherit;
+          text-decoration: none; }
       div.category div.list div.product div.description p {
         font-size: 14px;
         line-height: 18px; }
@@ -301,3 +304,91 @@ div.category div.list {
     height: 1px;
     margin: 20px 0px 0px 25%;
     width: 75%; }
+
+/* ### PRODUCT: ### */
+div.product div.title div.image {
+  height: auto;
+  max-height: 200px;
+  max-width: 200px;
+  margin: 0px auto 0px auto;
+  width: auto; }
+  div.product div.title div.image img {
+    width: 100%; }
+div.product div.title h1 {
+  margin: 20px 0px 0px 0px;
+  text-align: center; }
+div.product div.details {
+  padding: 20px 0px 20px 0px; }
+  div.product div.details div.detail {
+    clear: both;
+    display: table;
+    height: auto;
+    margin: 0px 0px 20px 0px;
+    width: 100%; }
+    div.product div.details div.detail div.icon {
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: table-cell;
+      height: 40px;
+      vertical-align: middle;
+      width: 40px; }
+    div.product div.details div.detail div.icon-calculator {
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzggNTAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDM4IDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiM1N0I4NjIiIGQ9Ik0zNC40LTAuMUgzLjZDMS42LTAuMSwwLDEuNSwwLDMuNXY0Mi45YzAsMiwxLjYsMy42LDMuNiwzLjZoMzAuOGMyLDAsMy42LTEuNiwzLjYtMy42VjMuNQ0KCQlDMzgsMS41LDM2LjQtMC4xLDM0LjQtMC4xeiBNMzQuMywzLjZ2NDIuN0gzLjdWMy42SDM0LjN6Ii8+DQoJPHBhdGggZmlsbD0iIzU3Qjg2MiIgZD0iTTguNCwxNGgyMS4zYzAuMywwLDAuNi0wLjMsMC42LTAuNnYtNGMwLTAuMy0wLjMtMC42LTAuNi0wLjZIOC40Yy0wLjMsMC0wLjYsMC4zLTAuNiwwLjZ2NA0KCQlDNy44LDEzLjcsOC4xLDE0LDguNCwxNHoiLz4NCgk8ZWxsaXBzZSBmaWxsPSIjNTdCODYyIiBjeD0iMTAuNSIgY3k9IjIxLjYiIHJ4PSIyLjciIHJ5PSIyLjYiLz4NCgk8ZWxsaXBzZSBmaWxsPSIjNTdCODYyIiBjeD0iMTkiIGN5PSIyMS42IiByeD0iMi43IiByeT0iMi42Ii8+DQoJPGVsbGlwc2UgZmlsbD0iIzU3Qjg2MiIgY3g9IjI3LjUiIGN5PSIyMS42IiByeD0iMi43IiByeT0iMi42Ii8+DQoJPGVsbGlwc2UgZmlsbD0iIzU3Qjg2MiIgY3g9IjEwLjUiIGN5PSIzMCIgcng9IjIuNyIgcnk9IjIuNiIvPg0KCTxlbGxpcHNlIGZpbGw9IiM1N0I4NjIiIGN4PSIxOSIgY3k9IjMwIiByeD0iMi43IiByeT0iMi42Ii8+DQoJPGVsbGlwc2UgZmlsbD0iIzU3Qjg2MiIgY3g9IjI3LjUiIGN5PSIzMCIgcng9IjIuNyIgcnk9IjIuNiIvPg0KCTxlbGxpcHNlIGZpbGw9IiM1N0I4NjIiIGN4PSIxMC41IiBjeT0iMzguNCIgcng9IjIuNyIgcnk9IjIuNiIvPg0KCTxlbGxpcHNlIGZpbGw9IiM1N0I4NjIiIGN4PSIxOSIgY3k9IjM4LjQiIHJ4PSIyLjciIHJ5PSIyLjYiLz4NCgk8ZWxsaXBzZSBmaWxsPSIjNTdCODYyIiBjeD0iMjcuNSIgY3k9IjM4LjQiIHJ4PSIyLjciIHJ5PSIyLjYiLz4NCjwvZz4NCjwvc3ZnPg0K); }
+    div.product div.details div.detail div.icon-info {
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTAgNTAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiM1N0I4NjIiIGQ9Ik0yNSwwQzExLjIsMCwwLDExLjIsMCwyNXMxMS4yLDI1LDI1LDI1czI1LTExLjIsMjUtMjVTMzguOCwwLDI1LDB6IE0yNS43LDcuNGMzLDAsNS41LDIuNSw1LjUsNS41DQoJcy0yLjUsNS41LTUuNSw1LjVzLTUuNS0yLjUtNS41LTUuNUMyMC4yLDkuOSwyMi42LDcuNCwyNS43LDcuNHogTTMzLjIsNDAuNWMtMC40LDAuNS0wLjksMC42LTEuMiwwLjZIMTkuM2MtMC4zLDAtMC44LTAuMS0xLjItMC42DQoJYy0wLjMtMC40LTAuNS0wLjgtMC41LTEuNGMwLTAuNiwwLjItMS4xLDAuNS0xLjRjMC40LTAuNSwwLjktMC42LDEuMi0wLjZoMS40VjI2LjVoLTEuNGMtMC4zLDAtMC44LTAuMS0xLjItMC42DQoJYy0wLjMtMC40LTAuNS0wLjgtMC41LTEuNGMwLTAuNiwwLjItMS4xLDAuNS0xLjRjMC40LTAuNSwwLjktMC42LDEuMi0wLjZIMzBjMC4zLDAsMC42LDAuMywwLjYsMC42djE0SDMyYzAuMywwLDAuOCwwLjEsMS4yLDAuNg0KCWMwLjMsMC40LDAuNSwwLjksMC41LDEuNEMzMy44LDM5LjcsMzMuNiw0MC4xLDMzLjIsNDAuNXoiLz4NCjwvc3ZnPg0K); }
+    div.product div.details div.detail div.text {
+      display: table-cell;
+      height: auto;
+      padding: 0px 0px 0px 10px;
+      vertical-align: middle;
+      width: auto; }
+      div.product div.details div.detail div.text p {
+        font-size: 16px;
+        line-height: 20px; }
+  div.product div.details div.button {
+    text-align: center; }
+    div.product div.details div.button div.inner {
+      clear: both;
+      cursor: pointer;
+      display: inline-block;
+      height: 42px;
+      margin: 0px auto 0px auto;
+      width: auto; }
+      div.product div.details div.button div.inner div.amount {
+        background: #ffffff;
+        border: solid 1px #57b862;
+        float: left;
+        height: 40px;
+        width: 40px; }
+        div.product div.details div.button div.inner div.amount p {
+          color: #4e805b;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 40px;
+          text-align: center; }
+        div.product div.details div.button div.inner div.amount select {
+          border: none;
+          cursor: pointer;
+          height: 42px;
+          left: -1px;
+          opacity: 0;
+          position: absolute;
+          top: -1px;
+          width: 42px;
+          z-index: 1; }
+      div.product div.details div.button div.inner div.icon {
+        background-color: #57b862;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 26px 20px;
+        float: left;
+        height: 42px;
+        width: 42px; }
+      div.product div.details div.button div.inner p.price {
+        background: #57b862;
+        color: #ffffff;
+        float: left;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 42px;
+        padding: 0px 10px 0px 0px; }

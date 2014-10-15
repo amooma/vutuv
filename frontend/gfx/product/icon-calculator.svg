@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 38 50" enable-background="new 0 0 38 50" xml:space="preserve">
+<g>
+	<path fill="#57B862" d="M34.4-0.1H3.6C1.6-0.1,0,1.5,0,3.5v42.9c0,2,1.6,3.6,3.6,3.6h30.8c2,0,3.6-1.6,3.6-3.6V3.5
+		C38,1.5,36.4-0.1,34.4-0.1z M34.3,3.6v42.7H3.7V3.6H34.3z"/>
+	<path fill="#57B862" d="M8.4,14h21.3c0.3,0,0.6-0.3,0.6-0.6v-4c0-0.3-0.3-0.6-0.6-0.6H8.4c-0.3,0-0.6,0.3-0.6,0.6v4
+		C7.8,13.7,8.1,14,8.4,14z"/>
+	<ellipse fill="#57B862" cx="10.5" cy="21.6" rx="2.7" ry="2.6"/>
+	<ellipse fill="#57B862" cx="19" cy="21.6" rx="2.7" ry="2.6"/>
+	<ellipse fill="#57B862" cx="27.5" cy="21.6" rx="2.7" ry="2.6"/>
+	<ellipse fill="#57B862" cx="10.5" cy="30" rx="2.7" ry="2.6"/>
+	<ellipse fill="#57B862" cx="19" cy="30" rx="2.7" ry="2.6"/>
+	<ellipse fill="#57B862" cx="27.5" cy="30" rx="2.7" ry="2.6"/>
+	<ellipse fill="#57B862" cx="10.5" cy="38.4" rx="2.7" ry="2.6"/>
+	<ellipse fill="#57B862" cx="19" cy="38.4" rx="2.7" ry="2.6"/>
+	<ellipse fill="#57B862" cx="27.5" cy="38.4" rx="2.7" ry="2.6"/>
+</g>
+</svg>

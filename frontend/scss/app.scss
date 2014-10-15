@@ -348,6 +348,11 @@ div.category {
             font-size: 22px;
             line-height: 28px;
           }
+
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
         }
 
         p {
@@ -434,6 +439,132 @@ div.category {
       height: 1px;
       margin: 20px 0px 0px 25%;
       width: 75%;
+    }
+  }
+}
+
+/* ### PRODUCT: ### */
+
+div.product {
+  div.title {
+    div.image {
+      height: auto;
+      max-height: 200px;
+      max-width: 200px;
+      margin: 0px auto 0px auto;
+      width: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h1 {
+      margin: 20px 0px 0px 0px;
+      text-align: center;
+    }
+  }
+
+  div.details {
+    padding: 20px 0px 20px 0px;
+
+    div.detail {
+      clear: both;
+      display: table;
+      height: auto;
+      margin: 0px 0px 20px 0px;
+      width: 100%;
+
+      div.icon {
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: table-cell;
+        height: 40px;
+        vertical-align: middle;
+        width: 40px;
+      }
+
+      div.icon-calculator {
+        background-image: url('../gfx/product/icon-calculator.svg');
+      }
+
+      div.icon-info {
+        background-image: url('../gfx/product/icon-info.svg');
+      }
+
+      div.text {
+        display: table-cell;
+        height: auto;
+        padding: 0px 0px 0px 10px;
+        vertical-align: middle;
+        width: auto;
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    div.button {
+      text-align: center;
+
+      div.inner {
+        clear: both;
+        cursor: pointer;
+        display: inline-block;
+        height: 42px;
+        margin: 0px auto 0px auto;
+        width: auto;
+
+        div.amount {
+          background: #ffffff;
+          border: solid 1px $color-light-green;
+          float: left;
+          height: 40px;
+          width: 40px;
+
+          p {
+            color: $color-dark-green;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 40px;
+            text-align: center;
+          }
+
+          select {
+            border: none;
+            cursor: pointer;
+            height: 42px;
+            left: -1px;
+            opacity: 0.0;
+            position: absolute;
+            top: -1px;
+            width: 42px;
+            z-index: 1;
+          }
+        }
+
+        div.icon {
+          background-color: $color-light-green;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 26px 20px;
+          float: left;
+          height: 42px;
+          width: 42px;
+        }
+
+        p.price {
+          background: $color-light-green;
+          color: #ffffff;
+          float: left;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 42px;
+          padding: 0px 10px 0px 0px;
+        }
+      }
     }
   }
 }
