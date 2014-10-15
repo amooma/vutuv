@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>vutuv</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAYAAACunahmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjUzQUYyNUU0QzlCMTFFNDlCQTFBRDc5MkRDMEJEMkUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjUzQUYyNUY0QzlCMTFFNDlCQTFBRDc5MkRDMEJEMkUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3REY3NkY4OTRDOUExMUU0OUJBMUFENzkyREMwQkQyRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3REY3NkY4QTRDOUExMUU0OUJBMUFENzkyREMwQkQyRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiqDTqgAAAeSSURBVHja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">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="//use.edgefonts.net/ubuntu:n3,i3,n4,i4,n5,i5,n7,i7:all.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="menu">
+
+      <div class="layout">
+
+        <div class="logo logo-white">
+
+          <a href="index.html"></a>
+
+        </div>
+
+        <div class="sections">
+
+          <a href="basket.html">
+
+            <div class="section section-basket">
+
+              <div></div>
+
+              <p>Einkaufswagen</p>
+
+            </div>
+
+          </a>
+
+          <a href="profile.html">
+
+            <div class="section section-profile">
+
+              <div></div>
+
+              <p>Profil</p>
+
+            </div>
+
+          </a>
+
+          <a href="search.html">
+
+            <div class="section section-search">
+
+              <div></div>
+
+              <p>Suche</p>
+
+            </div>
+
+          </a>
+
+          <a href="index.html">
+
+            <div class="section section-categories active">
+
+              <div></div>
+
+              <p>Kategorien</p>
+
+            </div>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content category">
+
+      <div class="title">
+
+        <div class="layout">
+
+          <h1>Essen</h1>
+
+          <p>Hier finden Sie eine große Auswahl an haltbaren Lebensmitteln wie Fix-Produkte, Tütensuppen, Konserven, Nudeln, Saucen, Süßigkeiten und vieles mehr. Erledigen Sie Ihren Wocheneinkauf im Handumdrehen.</p>
+
+        </div>
+
+      </div>
+
+      <div class="layout list">
+
+        <p>Aus dem Bereich Essen empfehlen wir Ihnen:</p>
+
+        <div class="product">
+
+          <div class="image">
+
+            <img src="gfx/category/photo-beets.png" />
+
+          </div>
+
+          <div class="description">
+
+            <h2>Gekochte Rote Beete</h2>
+
+            <p>Aus kontrolliert ökologicher Landwirtschaft.</p>
+
+            <div class="button">
+
+              <div class="amount">
+
+                <p>1</p>
+
+                <select>
+
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+
+                </select>
+
+              </div>
+
+              <div class="icon logo-basket-white"></div>
+
+              <p class="price">1,99 EUR</p>
+
+            </div>
+
+            <ul>
+              <li><span>500 g pro Stk. (3,98 EUR/1 kg)</span></li>
+              <li><span>Lieferbar innerhalb von 1-3 Werktagen.</span></li>
+            </ul>
+
+          </div>
+
+          <div class="clear"></div>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="product">
+
+          <div class="image">
+
+            <img src="gfx/category/photo-garlic.png" />
+
+          </div>
+
+          <div class="description">
+
+            <h2>Knoblauch im Netz</h2>
+
+            <p>Aus kontrolliert ökologicher Landwirtschaft und Klasse II.</p>
+
+            <div class="button">
+
+              <div class="amount">
+
+                <p>1</p>
+
+                <select>
+
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+
+                </select>
+
+              </div>
+
+              <div class="icon logo-basket-white"></div>
+
+              <p class="price">1,99 EUR</p>
+
+            </div>
+
+            <ul>
+              <li><span>150 g pro Stk. (1,26 EUR/100 g)</span></li>
+              <li><span>Lieferbar innerhalb von 1-3 Werktagen.</span></li>
+            </ul>
+
+          </div>
+
+          <div class="clear"></div>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="product">
+
+          <div class="image">
+
+            <img src="gfx/category/photo-onions.png" />
+
+          </div>
+
+          <div class="description">
+
+            <h2>Zwiebeln im Netz</h2>
+
+            <p>Aus kontrolliert ökologicher Landwirtschaft.</p>
+
+            <div class="button">
+
+              <div class="amount">
+
+                <p>1</p>
+
+                <select>
+
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+
+                </select>
+
+              </div>
+
+              <div class="icon logo-basket-white"></div>
+
+              <p class="price">2,99 EUR</p>
+
+            </div>
+
+            <ul>
+              <li><span>1 kg pro Stk. (2,99 EUR/1 kg)</span></li>
+              <li><span>Lieferbar innerhalb von 1-3 Werktagen.</span></li>
+            </ul>
+
+          </div>
+
+          <div class="clear"></div>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="product">
+
+          <div class="image">
+
+            <img src="gfx/category/photo-spanish-onions.png" />
+
+          </div>
+
+          <div class="description">
+
+            <h2>Spanische Gemüsezwiebeln im Netz</h2>
+
+            <p>Aus kontrolliert ökologicher Landwirtschaft und Klasse I.</p>
+
+            <div class="button">
+
+              <div class="amount">
+
+                <p>1</p>
+
+                <select>
+
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+
+                </select>
+
+              </div>
+
+              <div class="icon logo-basket-white"></div>
+
+              <p class="price">2,49 EUR</p>
+
+            </div>
+
+            <ul>
+              <li><span>1 kg pro Stk. (2,49 EUR/1 kg)</span></li>
+              <li><span>Lieferbar innerhalb von 1-3 Werktagen.</span></li>
+            </ul>
+
+          </div>
+
+          <div class="clear"></div>
+
+        </div>
+
+        <div class="clear"></div>
+
+      </div>
+
+      <div class="loading">
+
+        <p>Holen mehr Produkte, bitte warten.</p>
+
+        <div></div>
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+      <p class="address">AMOOMA GmbH - Bachstr. 124 - 56566 Neuwied</p>
+      <p class="owner">Geschäftsführer: Stefan Wintermeyer, Handelsregister Montabaur B14998</p>
+
+      <div class="logo-basket-white"></div>
+
+    </div>
+
+  </body>
+
+</html>
