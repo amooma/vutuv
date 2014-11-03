@@ -392,3 +392,140 @@ div.product div.details {
         font-weight: 600;
         line-height: 42px;
         padding: 0px 10px 0px 0px; }
+
+/* ### BASKET: ### */
+div.basket div.list {
+  padding: 20px 0px 20px 0px; }
+  div.basket div.list div.product {
+    clear: both;
+    display: table;
+    margin: 20px 0px 0px 0px;
+    min-height: 60px;
+    width: 100%; }
+    @media (max-width: 750px) {
+      div.basket div.list div.product {
+        display: block; } }
+    div.basket div.list div.product div.description {
+      display: table-cell;
+      height: auto;
+      vertical-align: middle;
+      width: 65%; }
+      @media (max-width: 750px) {
+        div.basket div.list div.product div.description {
+          clear: both;
+          display: block;
+          width: 100%; } }
+      div.basket div.list div.product div.description div.image {
+        height: 60px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 60px;
+        z-index: 1; }
+        div.basket div.list div.product div.description div.image img {
+          width: 100%; }
+      div.basket div.list div.product div.description h2 {
+        color: #4e805b;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 0px 0px 0px 80px; }
+        div.basket div.list div.product div.description h2 a {
+          color: inherit;
+          text-decoration: none; }
+      div.basket div.list div.product div.description p {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 5px 0px 0px 80px; }
+    div.basket div.list div.product div.total {
+      display: table-cell;
+      height: auto;
+      vertical-align: middle;
+      width: 25%; }
+      @media (max-width: 750px) {
+        div.basket div.list div.product div.total {
+          clear: both;
+          display: block;
+          float: left;
+          height: 30px;
+          margin: 10px 0px 0px 80px;
+          width: auto; } }
+      div.basket div.list div.product div.total div.amount {
+        float: right;
+        height: 30px;
+        width: auto; }
+        div.basket div.list div.product div.total div.amount p {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 30px;
+          text-align: right; }
+        div.basket div.list div.product div.total div.amount select {
+          border: none;
+          cursor: pointer;
+          height: 30px;
+          left: 0px;
+          opacity: 0;
+          position: absolute;
+          top: 0px;
+          width: 80px;
+          z-index: 1; }
+      div.basket div.list div.product div.total div.icon {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMTQgMTAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0IDEwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiM0ZTgwNWIiIGQ9Ik0xMywwSDFDMC41LDAsMCwwLjQsMCwxdjJjMCwwLjYsMC40LDEsMSwxaDEyYzAuNiwwLDEtMC40LDEtMVYxQzE0LDAuNCwxMy42LDAsMTMsMHoiLz4NCjxwYXRoIGZpbGw9IiM0ZTgwNWIiIGQ9Ik0xMyw2SDFDMC41LDYsMCw2LjQsMCw3djJjMCwwLjYsMC40LDEsMSwxaDEyYzAuNiwwLDEtMC40LDEtMVY3QzE0LDYuNCwxMy42LDYsMTMsNnoiLz4NCjwvc3ZnPg0K);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 14px 10px;
+        float: right;
+        height: 32px;
+        width: 32px; }
+      div.basket div.list div.product div.total p.price {
+        float: right;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: right;
+        width: 90px; }
+    div.basket div.list div.product div.line {
+      display: table-cell;
+      height: 60px;
+      text-align: center;
+      vertical-align: middle;
+      width: 5%; }
+      @media (max-width: 750px) {
+        div.basket div.list div.product div.line {
+          display: block;
+          float: left;
+          height: 30px;
+          margin: 10px 0px 0px 0px;
+          width: auto; } }
+      div.basket div.list div.product div.line div {
+        background: #cccccc;
+        display: inline-block;
+        height: 30px;
+        margin: 0px 20px 0px 20px;
+        width: 1px; }
+    div.basket div.list div.product div.remove {
+      display: table-cell;
+      height: 60px;
+      vertical-align: middle;
+      width: 5%; }
+      @media (max-width: 750px) {
+        div.basket div.list div.product div.remove {
+          display: block;
+          float: left;
+          height: 30px;
+          margin: 10px 0px 0px 0px;
+          width: auto; } }
+      div.basket div.list div.product div.remove p {
+        float: left;
+        font-size: 12px;
+        line-height: 40px; }
+        @media (max-width: 750px) {
+          div.basket div.list div.product div.remove p {
+            line-height: 30px; } }
+        div.basket div.list div.product div.remove p a, div.basket div.list div.product div.remove p a:visited {
+          color: inherit; }
+  div.basket div.list div.divider {
+    background: #cccccc;
+    clear: both;
+    height: 1px;
+    margin: 20px 0px 0px 0px;
+    width: 100%; }
