@@ -250,11 +250,6 @@ div.footer {
 /* ### CATEGORIES: ### */
 
 div.categories {
-  p {
-    padding: 20px 0px 20px 0px;
-    text-align: center;
-  }
-
   div.type {
     -moz-transition: all 250ms ease-in;
     -ms-transition: all 250ms ease-in;
@@ -288,6 +283,7 @@ div.categories {
       color: $color-dark-green;
       font-size: 24px;
       line-height: 24px;
+      padding: 20px 0px 20px 0px;
       text-align: center;
     }
   }
@@ -310,6 +306,10 @@ div.categories {
   div.type-household div {
     background: url('../gfx/categories/icon-household.svg');
     width: 64px;
+  }
+
+  div.tiles {
+    padding: 20px 0px 0px 0px;
   }
 }
 
