@@ -274,15 +274,15 @@ div.categories {
     }
 
     div {
-      height: 79px;
+      height: 71px;
       margin: 0px auto 0px auto;
       width: 100%
     }
 
     p {
       color: $color-dark-green;
-      font-size: 24px;
-      line-height: 24px;
+      font-size: 20px;
+      line-height: 20px;
       padding: 20px 0px 20px 0px;
       text-align: center;
     }
@@ -290,22 +290,26 @@ div.categories {
 
   div.type-eat div {
     background: url('../gfx/categories/icon-eat.svg');
-    width: 85px;
+    //width: 85px;
+    width: 76px;
   }
 
   div.type-drink div {
     background: url('../gfx/categories/icon-drink.svg');
-    width: 63px;
+    //width: 63px;
+    width: 56px;
   }
 
   div.type-pharmacy div {
     background: url('../gfx/categories/icon-pharmacy.svg');
-    width: 79px;
+    //width: 79px;
+    width: 71px;
   }
 
   div.type-household div {
     background: url('../gfx/categories/icon-household.svg');
-    width: 64px;
+    //width: 64px;
+    width: 57px;
   }
 
   div.tiles {
