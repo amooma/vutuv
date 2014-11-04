@@ -590,7 +590,7 @@ div.basket {
         display: table-cell;
         height: auto;
         vertical-align: middle;
-        width: 65%;
+        width: 60%;
 
         @media (max-width: 750px) {
           clear: both;
@@ -626,7 +626,7 @@ div.basket {
         p {
           font-size: 14px;
           line-height: 18px;
-          padding: 5px 0px 0px 80px;
+          padding: 5px 10px 0px 80px;
         }
       }
 
@@ -634,7 +634,7 @@ div.basket {
         display: table-cell;
         height: auto;
         vertical-align: middle;
-        width: 25%;
+        width: 27%;
 
         @media (max-width: 750px) {
           clear: both;
@@ -686,7 +686,7 @@ div.basket {
           font-weight: 500;
           line-height: 30px;
           text-align: right;
-          width: 90px;
+          width: 110px;
         }
       }
 
@@ -718,7 +718,7 @@ div.basket {
         display: table-cell;
         height: 60px;
         vertical-align: middle;
-        width: 5%;
+        width: 7%;
 
         @media (max-width: 750px) {
           display: block;
@@ -750,6 +750,103 @@ div.basket {
       height: 1px;
       margin: 20px 0px 0px 0px;
       width: 100%;
+    }
+
+    div.grandtotal {
+      clear: both;
+      height: auto;
+      width: 100%;
+
+      div.description {
+        float: left;
+        height: 60px;
+        width: 60%;
+
+        @media (max-width: 750px) {
+          width: 40%;
+        }
+
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 60px;
+          padding: 0px 0px 0px 80px;
+        }
+      }
+
+      div.amount {
+        float: left;
+        height: 60px;
+        width: 27%;
+
+        @media (max-width: 750px) {
+          width: 60%;
+        }
+
+        div.icon {
+          background-image: url('../gfx/basket/icon-equal.svg');
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 14px 10px;
+          float: right;
+          height: 60px;
+          width: 32px;
+        }
+
+        p {
+          float: right;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 60px;
+          text-align: right;
+          width: 110px;
+        }
+      }
+
+      div.filler {
+        float: left;
+        height: 60px;
+        width: 13%;
+
+        @media (max-width: 750px) {
+          display: none;
+        }
+      }
+    }
+
+    div.checkout {
+      clear: both;
+      height: auto;
+      margin: 20px 0px 0px 0px;
+      text-align: center;
+      width: 100%;
+
+      div.button {
+        clear: both;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0px auto 0px auto;
+
+        div.icon {
+          background-color: $color-light-green;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 21px 16px;
+          float: left;
+          height: 32px;
+          width: 32px;
+        }
+
+        p.price {
+          background: $color-light-green;
+          color: #ffffff;
+          float: left;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 32px;
+          padding: 0px 10px 0px 0px;
+        }
+      }
     }
   }
 }

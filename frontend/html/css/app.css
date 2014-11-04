@@ -409,7 +409,7 @@ div.basket div.list {
       display: table-cell;
       height: auto;
       vertical-align: middle;
-      width: 65%; }
+      width: 60%; }
       @media (max-width: 750px) {
         div.basket div.list div.product div.description {
           clear: both;
@@ -435,12 +435,12 @@ div.basket div.list {
       div.basket div.list div.product div.description p {
         font-size: 14px;
         line-height: 18px;
-        padding: 5px 0px 0px 80px; }
+        padding: 5px 10px 0px 80px; }
     div.basket div.list div.product div.total {
       display: table-cell;
       height: auto;
       vertical-align: middle;
-      width: 25%; }
+      width: 27%; }
       @media (max-width: 750px) {
         div.basket div.list div.product div.total {
           clear: both;
@@ -482,7 +482,7 @@ div.basket div.list {
         font-weight: 500;
         line-height: 30px;
         text-align: right;
-        width: 90px; }
+        width: 110px; }
     div.basket div.list div.product div.line {
       display: table-cell;
       height: 60px;
@@ -506,7 +506,7 @@ div.basket div.list {
       display: table-cell;
       height: 60px;
       vertical-align: middle;
-      width: 5%; }
+      width: 7%; }
       @media (max-width: 750px) {
         div.basket div.list div.product div.remove {
           display: block;
@@ -529,3 +529,75 @@ div.basket div.list {
     height: 1px;
     margin: 20px 0px 0px 0px;
     width: 100%; }
+  div.basket div.list div.grandtotal {
+    clear: both;
+    height: auto;
+    width: 100%; }
+    div.basket div.list div.grandtotal div.description {
+      float: left;
+      height: 60px;
+      width: 60%; }
+      @media (max-width: 750px) {
+        div.basket div.list div.grandtotal div.description {
+          width: 40%; } }
+      div.basket div.list div.grandtotal div.description p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+        padding: 0px 0px 0px 80px; }
+    div.basket div.list div.grandtotal div.amount {
+      float: left;
+      height: 60px;
+      width: 27%; }
+      @media (max-width: 750px) {
+        div.basket div.list div.grandtotal div.amount {
+          width: 60%; } }
+      div.basket div.list div.grandtotal div.amount div.icon {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMTQgMTAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0IDEwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiM0ZTgwNWIiIGQ9Ik0xMywwSDFDMC41LDAsMCwwLjQsMCwxdjJjMCwwLjYsMC40LDEsMSwxaDEyYzAuNiwwLDEtMC40LDEtMVYxQzE0LDAuNCwxMy42LDAsMTMsMHoiLz4NCjxwYXRoIGZpbGw9IiM0ZTgwNWIiIGQ9Ik0xMyw2SDFDMC41LDYsMCw2LjQsMCw3djJjMCwwLjYsMC40LDEsMSwxaDEyYzAuNiwwLDEtMC40LDEtMVY3QzE0LDYuNCwxMy42LDYsMTMsNnoiLz4NCjwvc3ZnPg0K);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 14px 10px;
+        float: right;
+        height: 60px;
+        width: 32px; }
+      div.basket div.list div.grandtotal div.amount p {
+        float: right;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 60px;
+        text-align: right;
+        width: 110px; }
+    div.basket div.list div.grandtotal div.filler {
+      float: left;
+      height: 60px;
+      width: 13%; }
+      @media (max-width: 750px) {
+        div.basket div.list div.grandtotal div.filler {
+          display: none; } }
+  div.basket div.list div.checkout {
+    clear: both;
+    height: auto;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    width: 100%; }
+    div.basket div.list div.checkout div.button {
+      clear: both;
+      cursor: pointer;
+      display: inline-block;
+      margin: 0px auto 0px auto; }
+      div.basket div.list div.checkout div.button div.icon {
+        background-color: #57b862;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 21px 16px;
+        float: left;
+        height: 32px;
+        width: 32px; }
+      div.basket div.list div.checkout div.button p.price {
+        background: #57b862;
+        color: #ffffff;
+        float: left;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 32px;
+        padding: 0px 10px 0px 0px; }
