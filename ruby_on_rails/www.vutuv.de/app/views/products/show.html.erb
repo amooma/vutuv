@@ -1,0 +1,56 @@
+<div class="content product">
+  <div class="title">
+    <div class="layout">
+      <div class="image">
+        <%= image_tag @product.photo.url(:medium) %>
+      </div>
+      <h1><%= @product %></h1>
+    </div>
+  </div>
+
+  <div class="layout details">
+
+    <div class="detail">
+      <div class="icon icon-info"></div>
+      <div class="text">
+        <%= markdown(@product.description) %>
+
+        <table>
+          <tr>
+            <td><strong>Marke:</strong></td>
+            <td><%= link_to @product.brand, @product.brand %></td>
+          </tr>
+          <tr>
+            <td><strong>Homepage des Produktes:</strong></td>
+            <td><%= link_to truncate(@product.url), @product.url %></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="icon icon-calculator"></div>
+      <div class="text">
+        <p>500 g pro Stk. (3,98 EUR/1 kg)</p>
+      </div>
+    </div>
+
+    <div class="button">
+      <div class="inner">
+        <div class="amount">
+          <p>1</p>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="icon logo-basket-white"></div>
+        <p class="price">1,99 EUR</p>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+</div>

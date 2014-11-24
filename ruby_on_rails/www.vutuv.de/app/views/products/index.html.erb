@@ -1,0 +1,74 @@
+<div class="content category">
+
+  <div class="title">
+
+    <div class="layout">
+
+      <h1>Essen</h1>
+
+      <p>Hier finden Sie eine große Auswahl an haltbaren Lebensmitteln wie Fix-Produkte, Tütensuppen, Konserven, Nudeln, Saucen, Süßigkeiten und vieles mehr. Erledigen Sie Ihren Wocheneinkauf im Handumdrehen.</p>
+
+    </div>
+
+  </div>
+
+  <div class="layout list">
+
+    <p>Aus dem Bereich Essen empfehlen wir Ihnen:</p>
+
+    <% @products.each do |product| %>
+
+    <div class="product">
+      <div class="image">
+        <a href="product.html"><%= image_tag product.photo.url(:medium) %></a>
+      </div>
+
+      <div class="description">
+        <h2><%= link_to product, product %></h2>
+
+        <p><%= truncate(product.description, length: 250) %></p>
+
+        <div class="button">
+
+          <div class="amount">
+            <p>1</p>
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+
+          <div class="icon logo-basket-white"></div>
+
+          <p class="price">1,99 EUR</p>
+        </div>
+
+        <ul>
+          <li><span>500 g pro Stk. (3,98 EUR/1 kg)</span></li>
+        </ul>
+
+      </div>
+
+      <div class="clear"></div>
+
+    </div>
+
+    <% if product != @products.last %>
+    <div class="divider"></div>
+    <% end %>
+    <% end %>
+
+    <div class="clear"></div>
+
+  </div>
+
+  <div class="loading">
+
+    <p>Holen mehr Produkte, bitte warten.</p>
+
+    <div></div>
+
+  </div>
+
+</div>

@@ -1,0 +1,38 @@
+<div class="content categories">
+  <div class="title">
+    <div class="layout">
+      <h1>Kategorien</h1>
+      <p>Bitte wählen Sie eine Kategorie um unsere Produkte anzusehen:</p>
+    </div>
+  </div>
+
+  <div class="layout tiles">
+    <%= link_to products_path do %>
+      <div class="type type-eat">
+        <div></div>
+        <p>Essen</p>
+      </div>
+    <% end %>
+
+    <%= link_to products_path do %>
+      <div class="type type-drink">
+        <div></div>
+        <p>Getränke</p>
+      </div>
+    <% end %>
+
+    <%= link_to products_path do %>
+      <div class="type type-pharmacy">
+        <div></div>
+        <p>Drogerie</p>
+      </div>
+    <% end %>
+
+    <%= link_to products_path do %>
+      <div class="type type-household">
+        <div></div>
+        <p>Haushalt</p>
+      </div>
+    <% end %>
+  </div>
+</div>
